@@ -37,6 +37,11 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 ### Bonus:
 
 1- oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista
+
+- aggiungo al campo di input l'evento al click sul tasto ENTER(@keyup.enter) che richiama la funzione addTodo
+
 2- cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
-Buon lavoro e buon divertimento! (modificato)
-:segno_spunta_bianco:
+
+- aggiungo ad ogni div contenente il testo del todo un evento al click che richiama la funzione invertDone
+- invertDone prende in ingresso l'indice del todo d'interesse e controlla il campo done dell'oggetto nella posizione scelta all'interno di todoList
+- se il campo done è true lo metto a false altrimenti lo metto a true
