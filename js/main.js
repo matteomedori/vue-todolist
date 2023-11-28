@@ -43,5 +43,9 @@ createApp({
         this.newText = "";
       }
     },
+    invertDone(index) {
+      if (this.todoList[index].done) this.todoList[index].done = false;
+      else this.todoList[index].done = true;
+    },
   },
 }).mount("#app");

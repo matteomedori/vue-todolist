@@ -50,6 +50,7 @@
                 placeholder="Add todo"
                 id="text-todo"
                 v-model="newText"
+                @keyup.enter="addTodo"
               />
               <button
                 class="btn btn-primary"
@@ -65,7 +66,10 @@
                 v-for="(todo, index) in todoList"
                 class="list-group-item d-flex justify-content-between align-items-center"
               >
-                <div :class="{ 'text-decoration-line-through': todo.done }">
+                <div
+                  :class="{ 'text-decoration-line-through': todo.done }"
+                  @click="invertDone(index)"
+                >
                   {{todo.text}}
                 </div>
                 <i
