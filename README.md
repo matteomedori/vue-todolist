@@ -19,6 +19,10 @@ Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
 
 Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo viene rimosso dalla lista.
 
+- aggiungo accanto ad ogni todo una x tramite font awesome
+- aggiungo un evento al click sulla x che richiama la funzione removeTodo
+- removeTodo prende in ingresso l'indice del todo da cancellare e utilizza il metodo splice degli array per rimuovere il todo dall'array
+
 ## MILESTONE 3
 
 Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul pulsante, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.
