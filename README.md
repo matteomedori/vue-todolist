@@ -27,6 +27,13 @@ Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo vie
 
 Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul pulsante, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti.
 
+- aggiungo nell'html un campo di input e un pulsante Add
+- aggiungo all'interno dell'oggetto ritornato da data() un campo newText inizializzato come stringa vuota
+- aggiungo al campo di input v-model per implementare il binding e ci inserisco newText così eventuali variazioni del campo di input vengono salvate in newText
+- aggiungo al bottone Add l'evento al click che richiama la funzione addTodo
+- addTodo prende la stringa priva degli spazi all'inizio e alla fine e controlla che non sia vuota
+- se non è vuota inserisce un nuovo oggetto nell'array todoList e reimposta newText a stringa vuota
+
 ### Bonus:
 
 1- oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista
