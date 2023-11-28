@@ -43,6 +43,7 @@
           <!-- colonna che contiene lista di todo -->
           <div class="col-md-7 mx-auto">
             <div><label for="text-todo">Insert new todo</label></div>
+            <!-- input per aggiungere todo -->
             <div class="input-group mb-3">
               <input
                 type="text"
@@ -61,6 +62,9 @@
                 Add
               </button>
             </div>
+            <!-- /input per aggiungere todo -->
+
+            <!-- lista di todo -->
             <ul class="list-group" v-if="todoList.length > 0">
               <li
                 v-for="(todo, index) in todoList"
@@ -79,6 +83,8 @@
                 ></i>
               </li>
             </ul>
+            <!-- /lista di todo -->
+
             <div class="alert alert-info" role="alert" v-else>
               The Todo-List is empty!
             </div>
