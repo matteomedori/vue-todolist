@@ -42,6 +42,24 @@
         <div class="row">
           <!-- colonna che contiene lista di todo -->
           <div class="col-md-7 mx-auto">
+            <div><label for="text-todo">Insert new todo</label></div>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Add todo"
+                id="text-todo"
+                v-model="newText"
+              />
+              <button
+                class="btn btn-primary"
+                type="button"
+                id="add-todo"
+                @click="addTodo"
+              >
+                Add
+              </button>
+            </div>
             <ul class="list-group" v-if="todoList.length > 0">
               <li
                 v-for="(todo, index) in todoList"
